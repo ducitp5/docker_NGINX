@@ -3,4 +3,7 @@ services:
     web:
         image: nginx:latest
         ports:
-            - "91:80"
+            - "80:80"
+        volumes:
+            - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+            - ./app:/app
