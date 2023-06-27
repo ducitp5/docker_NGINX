@@ -5,6 +5,7 @@ $query = $pdo->query('SHOW VARIABLES like "version"');
 
 $row = $query->fetch();
 
+echo 'ddddđ:' . '<hr>';
 echo 'MySQL version:' . $row['Value'];
 
 phpinfo();
